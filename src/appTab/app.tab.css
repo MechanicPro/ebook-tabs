@@ -1,0 +1,16 @@
+tabs {
+    font-family: Lato;
+}
+
+.tabs__titles {
+    list-style: none;
+    height: 320px;
+    overflow: scroll;
+    overflow-y: hidden;
+}
+
+.conteiner {
+    background: #f4ff02;
+    padding: 10px;
+    border-radius: 20px;
+}

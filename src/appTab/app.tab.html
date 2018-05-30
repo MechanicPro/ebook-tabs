@@ -1,0 +1,18 @@
+<button (click)="dec()">
+    Remove tab
+</button>
+<button (click)="inc()">
+    Add tab
+</button>
+<br>
+<div>
+    <my-tabs class="tabs__title" *ngFor="let tab of tabs">
+        <my-tab>
+            <a href="#" (click)="selectTab(tab)"><b>TITLE {{ tab }}</b></a>
+        </my-tab>
+    </my-tabs>
+    <div class="conteiner" *ngIf="showHide">
+        <p>Active tab: <b>{{ numTab }}</b></p>
+        <content [numTab]="numTab">{{content}}</content>
+    </div>
+</div>
